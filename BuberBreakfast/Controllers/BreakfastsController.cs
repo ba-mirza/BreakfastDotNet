@@ -23,5 +23,11 @@ public class BreakfastsController : ControllerBase
     {
         return Ok(request);
     }
+
+    [HttpDelete("/breakfasts/{id:guid}")]
+    public IActionResult DeleteBreakfast(Guid id)
+    {
+        return Ok(id);
+    }
     
 }
