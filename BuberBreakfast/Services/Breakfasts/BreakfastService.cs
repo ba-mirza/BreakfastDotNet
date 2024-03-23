@@ -12,7 +12,6 @@ public class BreakfastService : IBreakfastService
 
     public Breakfast GetBreakfast(Guid id)
     {
-        var uId = _breakfasts[id];
-        return uId;
+        return _breakfasts[id];
     }
 }
